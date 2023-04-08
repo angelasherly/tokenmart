@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tokenmart | Top Up Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/src/assets/images/icon.svg">
+    
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+  <body>
+    <div class="px-4 pt-6 mx-auto max-w-7xl lg:px-14 lg:py-10">
+      <div class="flex justify-between h-16">
+        <div class="flex justify-between flex-auto">
+          <!-- Logo Brand -->
+          <a href="index.html" class="flex items-center flex-shrink-0">
+            <img
+              class="w-auto h-6 lg:h-10"
+              src="/src/assets/images/header-logo.svg"
+              alt="Tokenmart"
+            />
+          </a>
+      </div>
+    </div>
+    
+    <main class="min-h-screen">
+        <!-- Form -->
+        <div class="relative px-4 mx-auto max-w-7xl lg:px-14 lg:py-16">
+          <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div class="lg:col-span-6">
+            <!-- Label New -->
+              <h1>
+                <span class="block mt-6 text-4xl font-semibold sm:text-2xl">
+                  <span class="block text-[#1E2B4F] leading-normal">
+                    Login
+                  </span>
+                </span>
+              </h1>
+              <!-- End Label New -->
+              
+              <!-- Registeration form-->
+              <div class="flex flex-wrap gap-16 mt-8">
+                <div class="flex items-center gap-4">
+                <!-- Form input -->
+                <form action="#">
+                  <div class="mb-4">
+                     <label class="block mb-4 font-body text-blueGray-600" for="Username2">Email Address *</label> 
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" wfd-id="id1" placeholder="Input your email">
+                  </div>
+                  <div class="mb-4">
+                     <label class="block mb-4 font-body text-blueGray-600" for="Password2">Password *</label> 
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Password2" type="password" wfd-id="id2" placeholder="Input your password">
+                  </div>
+                  <div class="mb-6">
+                    <div class="flex items-center my-2 mr-4 cursor-pointer"> 
+                       <label class="block font-body text-blueGray-600" for="checkbox2">Dengan mendaftar saya menyetujui <a class="text-indigo-500 transition duration-500 underline-hover" href="#">Kebijakan privasi</a> dari Tokenmart</label>
+                    </div>
+                 </div>
+                  <div class="grid flex-wrap gap-5 mt-10 lg:flex">
+                    <button type="submit" class="px-10 py-3 mt-4 font-bold text-white transition-all duration-500 rounded-full btn font-body bg-gradient-to-tl from-indigo-500 via-purple-500 to-indigo-500 bg-size-200 bg-pos-0 hover:bg-pos-100" href="#">Login</button>
+                  </div>
+               </form>
+                </div>
+              </div>
+              <!-- Registration form -->
+
+              <!-- Login Banner -->
+              <div class="hidden lg:block lg:absolute lg:z-10 lg:top-0 lg:right-0" aria-hidden="true">
+                <img
+                  src="/src/assets/images/buyer-registration.png"
+                  class="bg-cover bg-center object-cover object-center max-h-[580px]"
+                  alt="Hero Image"
+                />
+              </div>
+              <!-- End Login Banner -->
+
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+    </main>
+  </body>
+</html>
