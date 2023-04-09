@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/dist/main.css" />
   </head>
   <body>
-    <div class="px-4 pt-6 mx-auto max-w-7xl lg:px-14 lg:py-10">
+    <div class="px-4 pt-8 mx-auto max-w-7xl lg:px-14 lg:py-10">
       <div class="flex justify-between h-16">
         <div class="flex justify-between flex-auto">
           <!-- Logo Brand -->
@@ -33,12 +33,12 @@
     
     <main class="min-h-screen">
         <!-- Form -->
-        <div class="px-2 pt-4 mx-auto max-w-7xl lg:px-6 lg:py-6">
+        <div class="px-2 pt-4 mx-auto max-w-7xl lg:px-6 lg:py-16">
           <div class="lg:grid lg:grid-cols-12 lg:gap-8">
             <div class="lg:col-span-6">
             <!-- Label New -->
               <h1>
-                <span class="block mt-6 text-4xl font-semibold sm:text-2xl">
+                <span class="block mt-10 text-4xl font-semibold sm:text-2xl">
                   <span class="block text-[#1E2B4F] leading-normal">
                     Create Account
                   </span>
@@ -51,6 +51,10 @@
                 <div class="flex items-center gap-4">
                 <!-- Form input -->
                 <form action="#">
+                  <div class="mb-4">
+                     <label class="block mb-4 font-body text-blueGray-600" for="Username2">Full name *</label> 
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" wfd-id="id1" placeholder="Input your name">
+                  </div>
                   <div class="mb-4">
                      <label class="block mb-4 font-body text-blueGray-600" for="Username2">Email Address *</label> 
                      <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" wfd-id="id1" placeholder="Input your email">
@@ -77,10 +81,10 @@
               </div>
               <!-- Registration form -->
               
-              <!-- Register Banner -->
+              <!-- Register Banner
               <div class="hidden lg:block lg:absolute lg:z-10 lg:top-0 lg:right-0" aria-hidden="true">
                 <img
-                  src="/src/assets/images/buyer-registration.png"
+                  src="/src/assets/images/2.png"
                   class="bg-cover bg-center object-cover object-center max-h-[580px]"
                   alt="Hero Image"
                 />
