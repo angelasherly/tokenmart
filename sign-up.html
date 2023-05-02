@@ -16,6 +16,44 @@
     
     <link rel="stylesheet" href="/dist/main.css" />
   </head>
+  <script>
+    function validateForm(){
+    var name = document.forms["RegForm"]["fullname"].value;
+    var email = document.forms["RegForm"]["email"].value;
+    var password = document.forms["RegForm"]["password"].value;
+
+    //reGex for Email Validation.
+    var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;               
+    // Javascript reGex for Name validation
+    var regName = /\d+$/g;                         
+ 
+    if (name == "" || regName.test(name)) {
+        alert("Please enter your name properly.");
+        fullname.focus();
+        return false;
+    }
+
+    if (email == "" || !regEmail.test(email)) {
+        alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+      
+    if (password == "") {
+        alert("Please enter your password");
+        password.focus();
+        return false;
+    }
+ 
+    if(password.length <6){
+        alert("Password should be atleast 6 character long");
+        password.focus();
+        return false;
+    }
+
+    return true;
+    } 
+  </script>
   <body>
     <div class="px-4 pt-8 mx-auto max-w-7xl lg:px-14 lg:py-10">
       <div class="flex justify-between h-16">
@@ -50,18 +88,18 @@
               <div class="flex flex-wrap gap-16 mt-8">
                 <div class="flex items-center gap-4">
                 <!-- Form input -->
-                <form action="#">
+                <form name="RegForm" action="#" onsubmit="return validateForm()" method="post">
                   <div class="mb-4">
                      <label class="block mb-4 font-body text-blueGray-600" for="Username2">Full name *</label> 
-                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" wfd-id="id1" placeholder="Input your name">
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="fullname" name="fullname" type="text" wfd-id="id1" placeholder="Input your name">
                   </div>
                   <div class="mb-4">
                      <label class="block mb-4 font-body text-blueGray-600" for="Username2">Email Address *</label> 
-                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Username2" type="text" wfd-id="id1" placeholder="Input your email">
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="email" name="email" type="text" wfd-id="id1" placeholder="Input your email">
                   </div>
                   <div class="mb-4">
                      <label class="block mb-4 font-body text-blueGray-600" for="Password2">Password *</label> 
-                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="Password2" type="password" wfd-id="id2" placeholder="Input your password">
+                     <input class="w-full px-4 py-3 transition duration-500 border rounded border-blueGray-300 font-body text-blueGray-600 placeholder-blueGray-600 focus:shadow-lg focus:border-indigo-500 focus:outline-none" id="password" name="password" type="password" wfd-id="id2" placeholder="Input your password">
                   </div>
                   <div class="mb-6">
                      <div class="flex items-center my-2 mr-4 cursor-pointer"> 
